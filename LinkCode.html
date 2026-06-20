@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR YOUR LOVE - Handmade Flower Bouquets</title>
+    <!-- นำเข้า Font น่ารักๆ จาก Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- นำเข้า Icon (LINE, IG, FB) จาก Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Anuphan', sans-serif;
+        }
+
+        body {
+            /* พื้นหลังไล่เฉดสีฟ้าละมุน */
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #93c5fd 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            padding: 40px 25px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 430px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(3, 105, 161, 0.15);
+        }
+
+        /* กรอบใส่รูปโลโก้ร้าน */
+        .logo-container {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #7dd3fc;
+            box-shadow: 0 6px 16px rgba(14, 165, 233, 0.2);
+            background-color: white;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            color: #0369a1; /* สีฟ้าน้ำทะเลเข้ม */
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p.bio {
+            font-size: 0.95rem;
+            color: #0c4a6e;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        /* สไตล์ปุ่มหลักเน้นสีฟ้าอมเทา-น้ำเงิน ให้เข้าธีม */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px; /* เว้นระยะระหว่างไอคอนกับตัวหนังสือ */
+            padding: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 10px rgba(3, 105, 161, 0.1);
+            color: white;
+        }
+
+        .link-btn i {
+            font-size: 1.3rem;
+        }
+
+        /* ปุ่ม LINE (ใช้สีฟ้าสว่างแต่แอบมีกลิ่นอายดั้งเดิม) */
+        .line-btn {
+            background: linear-gradient(45deg, #06c755 0%, #34d399 100%);
+        }
+        .line-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(6, 199, 85, 0.3);
+        }
+
+        /* ปุ่ม Instagram */
+        .ig-btn {
+            background: linear-gradient(45deg, #4f46e5 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        .ig-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        }
+
+        /* ปุ่ม Facebook */
+        .fb-btn {
+            background: linear-gradient(45deg, #1d4ed8 0%, #3b82f6 100%);
+        }
+        .fb-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(29, 78, 216, 0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #64748b;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- โลโก้ร้าน FOR YOUR LOVE -->
+        <div class="logo-container">
+            <!-- เอารูปโลโก้ร้านสีฟ้าของคุณอัปโหลดขึ้น GitHub แล้วเอาลิงค์มาใส่ที่ src นี้ได้เลยครับ -->
+            <img class="logo-img" src="Logo" alt="FOR YOUR LOVE Logo">
+        </div>
+        
+        <!-- ชื่อร้าน และ Bio -->
+        <h1>FOR YOUR LOVE</h1>
+        <p class="bio">💐 ช่อดอกไม้ทำมือแทนความรู้สึกในทุกโอกาสพิเศษ <br> งานประณีต ทำเองทุกช่อ ใส่ใจทุกรายละเอียด ✨</p>
+        
+        <!-- ปุ่มลิงค์ติดต่อพร้อมโลโก้โซเชียล -->
+        <div class="links-wrapper">
+            <!-- ลิงค์ LINE -->
+            <a href="https://line.me/R/ti/p/..." target="_blank" class="link-btn line-btn">
+                <i class="fab fa-line"></i> สั่งซื้อ / สอบถามคิวงาน (LINE)
+            </a>
+            
+            <!-- ลิงค์ IG -->
+            <a href="https://instagram.com/..." target="_blank" class="link-btn ig-btn">
+                <i class="fab fa-instagram"></i> ดูแบบช่อดอกไม้เพิ่มเติม (Instagram)
+            </a>
+            
+            <!-- ลิงค์ Facebook -->
+            <a href="https://facebook.com/..." target="_blank" class="link-btn fb-btn">
+                <i class="fab fa-facebook-f"></i> ติดตามข่าวสาร / รีวิว (Facebook)
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ for FOR YOUR LOVE</p>
+        </div>
+    </div>
+
+</body>
+</html>
